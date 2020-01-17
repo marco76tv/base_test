@@ -8,6 +8,7 @@
  */
 
 define('LARAVEL_START', microtime(true));
+define('LARAVEL_DIR', realpath(__DIR__.'/../laravel'));
 
 /*
 |--------------------------------------------------------------------------
@@ -21,7 +22,7 @@ define('LARAVEL_START', microtime(true));
 |
 */
 
-require __DIR__.'/../vendor/autoload.php';
+require LARAVEL_DIR.'/vendor/autoload.php';
 
 /*
 |--------------------------------------------------------------------------
@@ -35,7 +36,12 @@ require __DIR__.'/../vendor/autoload.php';
 |
 */
 
-$app = require_once __DIR__.'/../bootstrap/app.php';
+$app = require_once LARAVEL_DIR.'/bootstrap/app.php';
+// set the public path to this directory
+$app->bind('path.public', function () {
+    return __DIR__;
+});
+
 
 /*
 |--------------------------------------------------------------------------

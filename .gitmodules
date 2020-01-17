@@ -27,4 +27,4 @@
 	url = https://github.com/laraxot/theme_sb-admin-2-bs4.git
 [submodule "laravel/resources/views/themes/coupon"]
 	path = laravel/resources/views/themes/coupon
-	url = https://bitbucket.org/team_xot/theme_coupon.git
+	url = https://github.com/laraxot/theme_coupon.git

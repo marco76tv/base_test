@@ -15,7 +15,9 @@
         "laravel/slack-notification-channel": "^2.0",
         "laravel/tinker": "^2.0",
         "laravelcollective/html": "^6.0",
-        "nwidart/laravel-modules": "^6.2"
+        "nwidart/laravel-modules": "^6.2",
+        "doctrine/dbal": "^2.6",
+        "staudenmeir/eloquent-has-many-deep":"^1.11"
     },
     "require-dev": {
         "barryvdh/laravel-debugbar": "^3.2",

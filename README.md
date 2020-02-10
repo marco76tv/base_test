@@ -9,4 +9,12 @@ $ composer self-update
 
 $ composer update
 
+$ cp .env.latest .env
+
+$ php artisan key:generate
+
+[modifica .env con dati connessione db]
+
+
+
 

@@ -15,6 +15,11 @@
 		"phpmd.enabled": false,
 		"phpmd.validate.rulesets": "cleancode,codesize,controversial,design,naming,unusedcode",
 		"phpmd.SuppressWarnings":true,
-		"phpmd.verbose": false
+		"phpmd.verbose": false,
+		"php-cs-fixer.allowRisky": true,
+		"editor.defaultFormatter": "junstyle.php-cs-fixer",
+		"[php]": {
+			"editor.defaultFormatter": "junstyle.php-cs-fixer"
+		}
 	}
 }

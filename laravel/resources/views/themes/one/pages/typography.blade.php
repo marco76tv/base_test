@@ -1,4 +1,4 @@
-@extends('layouts.app', [
+@extends('pub_theme::layouts.app', [
   'namePage' => 'Typography',
   'class' => 'sidebar-mini',
   'activePage' => 'typography',

@@ -1,4 +1,4 @@
-@extends('layouts.app', [
+@extends('pub_theme::layouts.app', [
     'class' => 'sidebar-mini ',
     'namePage' => 'User Profile',
     'activePage' => 'profile',
@@ -16,11 +16,11 @@
             <h5 class="title">{{__(" Edit Profile")}}</h5>
           </div>
           <div class="card-body">
-            <form method="post" action="{{ route('profile.update') }}" autocomplete="off"
+            <form method="post" action="{{-- route('profile.update') --}}" autocomplete="off"
             enctype="multipart/form-data">
               @csrf
               @method('put')
-              @include('alerts.success')
+              @include('pub_theme::alerts.success')
               <div class="row">
               </div>
                 <div class="row">
@@ -28,7 +28,7 @@
                         <div class="form-group">
                             <label>{{__(" Name")}}</label>
                                 <input type="text" name="name" class="form-control" value="{{ old('name', auth()->user()->name) }}">
-                                @include('alerts.feedback', ['field' => 'name'])
+                                @include('pub_theme::alerts.feedback', ['field' => 'name'])
                         </div>
                     </div>
                 </div>
@@ -37,7 +37,7 @@
                     <div class="form-group">
                       <label for="exampleInputEmail1">{{__(" Email address")}}</label>
                       <input type="email" name="email" class="form-control" placeholder="Email" value="{{ old('email', auth()->user()->email) }}">
-                      @include('alerts.feedback', ['field' => 'email'])
+                      @include('pub_theme::alerts.feedback', ['field' => 'email'])
                     </div>
                   </div>
                 </div>
@@ -51,16 +51,16 @@
             <h5 class="title">{{__("Password")}}</h5>
           </div>
           <div class="card-body">
-            <form method="post" action="{{ route('profile.password') }}" autocomplete="off">
+            <form method="post" action="{{-- route('profile.password') --}}" autocomplete="off">
               @csrf
               @method('put')
-              @include('alerts.success', ['key' => 'password_status'])
+              @include('pub_theme::alerts.success', ['key' => 'password_status'])
               <div class="row">
                 <div class="col-md-7 pr-1">
                   <div class="form-group {{ $errors->has('password') ? ' has-danger' : '' }}">
                     <label>{{__(" Current Password")}}</label>
                     <input class="form-control {{ $errors->has('password') ? ' is-invalid' : '' }}" name="old_password" placeholder="{{ __('Current Password') }}" type="password"  required>
-                    @include('alerts.feedback', ['field' => 'old_password'])
+                    @include('pub_theme::alerts.feedback', ['field' => 'old_password'])
                   </div>
                 </div>
               </div>
@@ -69,7 +69,7 @@
                   <div class="form-group {{ $errors->has('password') ? ' has-danger' : '' }}">
                     <label>{{__(" New password")}}</label>
                     <input class="form-control {{ $errors->has('password') ? ' is-invalid' : '' }}" placeholder="{{ __('New Password') }}" type="password" name="password" required>
-                    @include('alerts.feedback', ['field' => 'password'])
+                    @include('pub_theme::alerts.feedback', ['field' => 'password'])
                   </div>
                 </div>
             </div>

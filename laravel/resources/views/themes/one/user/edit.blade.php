@@ -1,4 +1,4 @@
-@extends('layouts.app', [
+@extends('pub_theme::layouts.app', [
     'class' => 'sidebar-mini ',
     'namePage' => 'Edit user',
     'activePage' => 'user',

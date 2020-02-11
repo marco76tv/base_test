@@ -1,4 +1,4 @@
-@extends('layouts.app', [
+@extends('pub_theme::layouts.app', [
     'namePage' => 'Users',
     'class' => 'sidebar-mini',
     'activePage' => 'users',
@@ -13,11 +13,11 @@
       <div class="col-md-12">
         <div class="card">
           <div class="card-header">
-              <a class="btn btn-primary btn-round text-white pull-right" href="{{ route('user.create') }}">{{ __('Add user') }}</a>
+              <a class="btn btn-primary btn-round text-white pull-right" href="{{-- route('user.create') --}}">{{ __('Add user') }}</a>
             <h4 class="card-title">{{ __('Users') }}</h4>
             <div class="col-12 mt-2">
-              @include('alerts.success')
-              @include('alerts.errors')
+              @include('pub_theme::alerts.success')
+              @include('pub_theme::alerts.errors')
             </div>
           </div>
           <div class="card-body">
@@ -44,7 +44,10 @@
                 </tr>
               </tfoot>
               <tbody>
+                  {{--
                 @foreach($users as $user)
+                --}}
+                @foreach($rows as $user)
                   <tr>
                     <td>
                       <span class="avatar avatar-sm rounded-circle">
@@ -67,7 +70,7 @@
                         </button>
                       </form>
                     @else
-                      <a type="button" href="{{ route('profile.edit') }}" rel="tooltip" class="btn btn-success btn-icon btn-sm " data-original-title="" title="">
+                      <a type="button" href="{{-- route('profile.edit') --}}" rel="tooltip" class="btn btn-success btn-icon btn-sm " data-original-title="" title="">
                         <i class="now-ui-icons ui-2_settings-90"></i>
                       </a>
                     @endif
@@ -90,7 +93,7 @@
 @push('js')
   <script>
     $(document).ready(function() {
-      $(".delete-button").click(function(){ 
+      $(".delete-button").click(function(){
         var clickedButton = $( this );
         Swal.fire({
         title: 'Are you sure?',

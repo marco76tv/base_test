@@ -1,4 +1,4 @@
-@extends('layouts.app', [
+@extends('pub_theme::layouts.app', [
     'namePage' => 'Table List',
     'class' => 'sidebar-mini',
     'activePage' => 'table',

@@ -16,7 +16,8 @@ $def = [
         'event' => 'Modules\Blog\Models\Event',
         'rating' => 'Modules\Blog\Models\Rating',
         'my_rating' => 'Modules\Blog\Models\MyRating',
-        //'profile' => 'Modules\Blog\Models\Profile',
+        'profile' => 'Modules\Blog\Models\Profile',
+        'page' => 'Modules\Blog\Models\Page',
         //------------- Extend --------------------------------------
         'translation' => 'Modules\Xot\Models\Translation',
         'image' => 'Modules\Xot\Models\Image',
@@ -35,10 +36,10 @@ $def = [
         'user' => 'Modules\LU\Models\User',
         'user_right' => 'Modules\LU\Models\UserRight',
         //------------ Forum ---------------------------------------
-        'forum' => 'Modules\Forum\Models\Forum',
-        'profile' => 'Modules\Forum\Models\Profile',
+        //'forum' => 'Modules\Forum\Models\Forum',
+        //'profile' => 'Modules\Forum\Models\Profile',
         //----------- Customer -------------------------------------
-        'neighbor' => 'Modules\Customer\Model\Customer',
+        //'neighbor' => 'Modules\Customer\Model\Customer',
     ],
     'roots' => [
         'page',

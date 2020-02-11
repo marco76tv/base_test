@@ -1,9 +1,9 @@
-@extends('layouts.app', [
+@extends('pub_theme::layouts.app', [
     'namePage' => 'Upgrade TO pro',
     'class' => 'sidebar-mini',
     'activePage' => 'upgrade',
   ])
-  
+
 @section('content')
   <div class="panel-header panel-header-sm">
   </div>

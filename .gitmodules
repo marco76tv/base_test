@@ -22,3 +22,15 @@
 [submodule "laravel/resources/views/themes/sb-admin-2-bs4"]
 	path = laravel/resources/views/themes/sb-admin-2-bs4
 	url = https://github.com/laraxot/theme_sb-admin-2-bs4.git
+[submodule "laravel/resources/views/themes/one"]
+	path = laravel/resources/views/themes/one
+	url = https://github.com/laraxot/theme_one.git
+[submodule "laravel/resources/views/themes/zero"]
+	path = laravel/resources/views/themes/zero
+	url = https://github.com/laraxot/theme_zero.git
+[submodule "laravel/resources/views/themes/two"]
+	path = laravel/resources/views/themes/two
+	url = https://github.com/laraxot/theme_two.git
+[submodule "laravel/resources/views/themes/starter"]
+	path = laravel/resources/views/themes/starter
+	url = https://github.com/laraxot/theme_starter.git

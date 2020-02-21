@@ -9,6 +9,7 @@
     "license": "MIT",
     "require": {
         "php": "^7.2",
+        "doctrine/dbal": "^2.10",
         "fideloper/proxy": "^4.0",
         "laravel/framework": "^6.2",
         "laravel/scout": "^7.2",
@@ -16,8 +17,7 @@
         "laravel/tinker": "^2.0",
         "laravelcollective/html": "^6.0",
         "nwidart/laravel-modules": "^6.2",
-        "doctrine/dbal": "^2.6",
-        "staudenmeir/eloquent-has-many-deep":"^1.11"
+        "staudenmeir/eloquent-has-many-deep": "^1.11"
     },
     "require-dev": {
         "barryvdh/laravel-debugbar": "^3.2",

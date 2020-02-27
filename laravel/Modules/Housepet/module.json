@@ -1,0 +1,13 @@
+{
+    "name": "Housepet",
+    "alias": "housepet",
+    "description": "",
+    "keywords": [],
+    "order": 0,
+    "providers": [
+        "Modules\\Housepet\\Providers\\HousepetServiceProvider"
+    ],
+    "aliases": {},
+    "files": [],
+    "requires": []
+}

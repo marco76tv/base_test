@@ -1,0 +1,130 @@
+/*
+Theme Name: Target Child
+Theme URI: http://target.select-themes.com
+Description: A child theme of Target Theme
+Author: Select Themes
+Author URI: http://demo.select-themes.com
+Version: 1.0.0
+Template: targetwp
+*/
+
+@import url('../targetwp/style.css');
+
+p,h1,h2,h3,h4,h5,h6{font-family: Quicksand!important;}
+
+
+/* HEADER in home page*/
+.qodef-container, .qodef-content, .qodef-full-width, .qodef-wrapper {
+    background: none;
+}
+
+.qodef-wrapper {
+    background-color: transparent;
+    background-position: right top;
+    background-repeat: no-repeat;
+    background-size: auto;
+}
+
+/*.sl-smart {background: }/*
+    
+    linear-gradient(to right top,rgba(170,172,175,0.8),rgba(97,98,100,0.8));
+        
+	-webkit-background-clip: text;
+	-webkit-text-fill-color: transparent;
+}    background: linear-gradient(to right, #AAACAF 0%, #616264 100%);
+
+
+
+.sl-green{background: linear-gradient(to right top,rgba(127,172,60,0.8),rgba(76,128,54,0.8));
+	-webkit-background-clip: text;
+	-webkit-text-fill-color: transparent;
+}
+*/
+/* MENU CTA */
+p.cta-menu {
+    color: #94c73c!important;
+    background-color:#1e646e;
+    padding:10px 20px;
+    border-radius: 3px;
+}
+
+p.cta-menu a{color: #1e646e;}
+
+
+/* TYPOGRAPHY */
+h5.qodef-item-title.entry-title {text-align: center;padding-bottom: 10px;}
+
+/* CUT DIV */
+.cut-standard {
+    background-color: #fcfcfc!important;
+    background-image: linear-gradient(to right bottom,rgba(126,213,111,0.8),rgba(40,180,131,0.8));
+    background-size: cover;
+    background-position: top;
+   
+    clip-path: polygon(0 3%, 100% 0, 100% 97%, 0 100%);
+}
+
+.cut-top {
+    background-color: #fcfcfc!important;
+    background-image: linear-gradient(to right bottom,rgba(126,213,111,0.8),rgba(40,180,131,0.8));
+    background-size: cover;
+    background-position: top;
+   
+    /*clip-path: polygon(0 3%, 100% 0, 100% 100%, 0 100%);*/
+    clip-path: polygon(0 0, 100% 3%, 100% 100%, 0 100%);
+}
+
+.cut-bottom {
+    background-color: #fcfcfc!important;
+    background-image: linear-gradient(to right bottom,rgba(126,213,111,0.8),rgba(40,180,131,0.8));
+    background-size: cover;
+    background-position: top;
+   
+    clip-path: polygon(0 0, 100% 0, 100% 100%, 0 95%);
+}
+
+/* PRICING TABLES */
+.qodef-pricing-tables .qodef-price-table .qodef-price-table-inner ul li.qodef-table-title .qodef-title-content {
+    font-size: 22px!important;
+}
+
+.qodef-price::after{
+    content: ' + vat';
+    font-size: 20px;
+    text-transform: uppercase;
+    padding-left: 3px;
+}
+
+.price-discount {
+    background-color: transparent;
+    background-image: -webkit-gradient(linear, 19.1% -7.9%, 81% 107.9%, color-stop(0, #fff), color-stop(.48, #fff), color-stop(.5, #000), color-stop(.52, #fff), color-stop(1, #fff));
+    background-image: -webkit-repeating-linear-gradient(287deg, #fff 0%, #fff 48%, #000 50%, #fff 52%, #fff 100%);
+    background-image: repeating-linear-gradient(163deg, #fff 0%, #fff 48%, #000 50%, #fff 52%, #fff 100%);
+    background-image: -ms-repeating-linear-gradient(287deg, #fff 0%, #fff 48%, #000 50%, #fff 52%, #fff 100%);   
+}
+
+
+/* FOOTER */
+footer .qodef-container {
+    background-color: #fcfcfc!important;
+    /*background-image: linear-gradient(to right bottom,rgba(126,213,111,0.8),rgba(40,180,131,0.8));*/
+    /*bbackground-image: linear-gradient(to right bottom,rgba(37,46,55,0.8),rgba(55,78,85,0.8));*/
+    
+    background-image: linear-gradient(to right bottom,rgba(37,46,55,0.8),rgba(30,100,110,0.6));
+
+    background-size: cover;
+    background-position: top;
+   /* clip-path: polygon(0% 0%, 100% 5%, 100% 100%, 0 100%);*/
+}
+
+footer .qodef-container p,
+footer .qodef-container li,
+footer .qodef-container a,
+footer .qodef-container h4 {
+    /*color: #1c1c1c!important;*/
+    color: #cdced0!important;
+}
+
+
+/* BORDER  TICKETS */
+.qodef-pricing-tables .qodef-price-table {}

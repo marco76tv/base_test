@@ -10,13 +10,11 @@
   <link href="https://fonts.googleapis.com/css?family=Nunito+Sans:700%7CNunito:300,600" rel="stylesheet">
 
   <!-- Bootstrap -->
-  {{ Theme::add('pub_theme::dist/css/bootstrap.min.css') }}
+  {{ Theme::add('pub_theme::dist/css/app.css') }}
 
-  <!-- Font Awesome Icon -->
-  {{ Theme::add('pub_theme::dist/css/font-awesome.min.css') }}
-
+  
   <!-- Custom stlylesheet -->
-  {{ Theme::add('pub_theme::dist/css/style.css') }}
+  {{ Theme::add('pub_theme::css/style.css') }}
 
   <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
   <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->

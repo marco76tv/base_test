@@ -34,3 +34,6 @@
 [submodule "laravel/resources/views/themes/starter"]
 	path = laravel/resources/views/themes/starter
 	url = https://github.com/laraxot/theme_starter.git
+[submodule "laravel/resources/views/themes/talenteco_events"]
+	path = laravel/resources/views/themes/talenteco_events
+	url = https://Malebestia@bitbucket.org/team_xot/theme_talenteco_events.git

@@ -37,3 +37,6 @@
 [submodule "laravel/resources/views/themes/talenteco_events"]
 	path = laravel/resources/views/themes/talenteco_events
 	url = https://Malebestia@bitbucket.org/team_xot/theme_talenteco_events.git
+[submodule "laravel/Modules/RevSlider"]
+	path = laravel/Modules/RevSlider
+	url = https://Malebestia@bitbucket.org/team_xot/module_revslider.git

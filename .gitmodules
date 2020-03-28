@@ -40,3 +40,6 @@
 [submodule "laravel/Modules/RevSlider"]
 	path = laravel/Modules/RevSlider
 	url = https://Malebestia@bitbucket.org/team_xot/module_revslider.git
+[submodule "laravel/resources/views/themes/coderdocs"]
+	path = laravel/resources/views/themes/coderdocs
+	url = https://github.com/laraxot/theme_coderdocs

@@ -1,7 +1,7 @@
 <?php
 
 $def = [
-    'pub_theme' => 'one',
+    'pub_theme' => 'coderdocs',
     'adm_theme' => 'sb-admin-2-bs4',
     'enable_ads' => '1',
     'model' => [
